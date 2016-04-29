@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+  		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<link href="css/main.css" rel="stylesheet" />
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+		<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</head>
+	<body>
+		<div id="v1">
+		</div>
+		<div class="container">
+			<p>This graph answers the question: Which antibiotic is most effective for each type of bacteria? This question was harder to visualize that it seems because the lower an antibiotic's Minimum Inhibitory Concentration (MIC), the more effective it is. Because my question wants to find which antibiotic is most effective, I decided that my visualization would show the effectiveness of each antibiotic relative to the least effective antibiotic. The least effective antibiotic for each bacteria is the antibiotic with the highest MIC. I then divided the other antibiotic MICs by the least effective MIC to obtain a ratio of how much more effective the other antibiotics are. For example, for Aerobacter Aerogenes, Penicilin has the highest MIC at 870, Strep has a MIC of 1, and Neomycin has a MIC of 1.6. I divide everything by 870, resulting in the results that show Strep is 870x more effective and Neomycin 543x more effective. I chose to use a grouped bar chart with each group being a different bacteria and the bars in each group being a different antibiotic. I organized it this way to provide a clear comparison between the three antibiotics, and this format allows someone to immediately see which antibiotic is most effective for each bacteria. It is clear because the primary visual task someone has to perform on this graph is a comparison of position along a common scale, which is the easiest elementary perceptual task.</p>
+			<p><strong>NOTE: ALL graphs use a log scale</strong></p>
+		<div id="v2">
+		</div>
+		<div class="container">
+			<p>This graph answers the question: Does the type of Gram Staining (positive or negative) of the bacteria affect the average amount of antibiotic required to be effective? I again chose to make a grouped bar chart with the groups being positive or negative, and the bars in each group being a different antibiotic. This graph shows, for each antibiotic, the average amount of that antibiotic required to be effective for all positive and negative types of bacteria. I averaged the MIC for each antibiotic and type because I noticed a general trend between the MIC levels in positive and negative bacteria types. The perceptual task someone has to perform here is a comparison of position along a common scale, with additional color coding to help quickly associate the bars they should be comparing. The graph lets the user quickly see the differences in average MIC between positive and negative bacteria.</p>
+		</div>
+		<div id="v3">
+		</div>
+		<div class="container">
+			<p>This graph helps provide an overview of the effectiveness of each antibiotic. I wanted to show the distribution of MIC for each antibiotic, and show important statistical information such as the mean and range of values. I chose a box plot, which shows all the information I mentioned previously, as well as visually being simple to understand. The main perceptual task here is still a comparison of position along a common scale. There is also the task of length for understanding the ranges of each antibiotic. The graph gives the user an understanding of multiple interesting facts about each antibiotic, such as how Neomycin is on average the most effective antibiotic, or how Streptomycin has the smallest range, and how Penicilin ranges from very effective to not effective at all. This information is all visually encoded as position and length, making it easy on the viewer to understand.</p>
+		</div>
+	</body>
+</html>

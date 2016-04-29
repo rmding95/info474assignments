@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Board Games</title>
+  <link href="css/main.css" rel="stylesheet" />
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body class="container">
+
+	<h2>Effects of Numbers of Players and Playing Time on Board Game Ratings</h2>
+
+	<div class="container">
+		<p>Select Rating Type</p>
+		<div class="btn-group" data-toggle="buttons">
+		  <label class="btn btn-primary">
+		    <input value="average_rating" class="rating" type="radio" name="options" id="option1" autocomplete="off">Average Rating
+		  </label>
+		  <label class="btn btn-primary active">
+		    <input value="bayes_average_rating" type="radio" class="rating" name="options" id="option2" autocomplete="off" checked>Bayes Average Rating
+		  </label>
+		</div>
+	</div>
+
+	<div class="container">
+		<p>Select Chart Type</p>
+		<div class="btn-group" data-toggle="buttons">
+		  <label class="btn btn-primary">
+		    <input value = "playtime" type="radio" name="options" id="option1" autocomplete="off">Average Playtime VS Rating
+		  </label>
+		  <label class="btn btn-primary active">
+		    <input value = "players" type="radio" name="options" id="option2" autocomplete="off" checked>Number of Players VS Rating
+		  </label>
+		</div>
+	</div>
+
+	<div id="vis"></div>
+</body>
+</html>
