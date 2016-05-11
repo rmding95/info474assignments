@@ -40,11 +40,11 @@ var myChart = TreemapChart().nestedElement("region").measure("fertility_rate").e
 
 \# *chart.measure*(value)
 
-> Tells the chart what variable to get the numeric values of each node from.
+> Tells the chart what variable to get the numeric values of each node from. In the country example, we visualized the variable fertility_rate.
 
 \# *chart.elementText*(value)
 
-> Tells the chart what text each node should have.
+> Tells the chart what text each node should have. In the country example, we displayed the country_code in each node.
 
 \# *chart.colorScale*(value)
 
