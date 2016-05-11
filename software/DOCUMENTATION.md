@@ -19,6 +19,8 @@ This will draw the treemap in the selected div with default parameters. For a li
 These parameters can be changed by calling the below functions on your TreemapChart instance (called mychart in the example above) like this:
 var myChart = TreemapChart().nestedElement("region").measure("fertility_rate").elementText("country_code");
 
+**Three parameters of the Treemap Chart are essential to set for a functional chart: nestedElement, measure, and elementText.**
+
 \# *chart.nestedElement*(value)
 
-> Tells the treemap chart which variable to nest.
+> Sets the heirarchy of the data and tells the treemap chart which variable to nest. This 
