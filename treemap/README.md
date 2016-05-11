@@ -24,6 +24,8 @@ var div = d3.select("#vis")datum(data).call(mychart)
 
 This will draw the treemap in the selected div with default parameters. For a list of configurable parameters, check the API parameters section below this.
 
+Make sure to link the css file and TreemapChart.js in your index.html file!
+
 ## API Parameters
 
 These parameters can be changed by calling the below functions on your TreemapChart instance (called mychart in the example above) like this:
