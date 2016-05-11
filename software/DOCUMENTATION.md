@@ -27,10 +27,29 @@ This will draw the treemap in the selected div with default parameters. For a li
 ## API Parameters
 
 These parameters can be changed by calling the below functions on your TreemapChart instance (called mychart in the example above) like this:
+
+```javascript
 var myChart = TreemapChart().nestedElement("region").measure("fertility_rate").elementText("country_code");
+```
 
 **Three parameters of the Treemap Chart are essential to set for a functional chart: nestedElement, measure, and elementText.**
 
 \# *chart.nestedElement*(value)
 
-> Sets the heirarchy of the data and tells the treemap chart which variable to nest. This 
+> Sets the heirarchy of the data and tells the treemap chart which variable to nest. This will group your data into a hierarchial tree structure based off the value you give. Going off the previous country example, you would structure your data off region.
+
+\# *chart.measure*(value)
+
+> Tells the chart what variable to get the numeric values of each node from.
+
+\# *chart.elementText*(value)
+
+> Tells the chart what text each node should have.
+
+\# *chart.colorScale(value)
+
+> Sets the color scale for the chart. You have to specify a specific string for this to work, the choices are:
+-category10 *DEFAULT*
+-category20
+-category20b
+-category20c
