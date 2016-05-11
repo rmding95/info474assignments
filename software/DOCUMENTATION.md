@@ -53,4 +53,29 @@ var myChart = TreemapChart().nestedElement("region").measure("fertility_rate").e
 - category20
 - category20b
 - category20c
+
 See [this] (https://github.com/mbostock/d3/wiki/Ordinal-Scales#categorical-colors) for more information about categorical color scales.
+
+\# *chart.width*(value) 
+
+> Sets the width of the chart in px.
+
+\# *chart.height*(value) 
+
+> Sets the height of the chart in px.
+
+\# *chart.padding*(value)
+
+> Sets the amount of padding around each group of elements. Default is 0, and I wouldn't recommend any values larger than 5.
+
+\# *chart.mode*(value)
+
+> Lets you set the way nodes are arranged in the treemap. Would not recommend changing this value, but options are below:
+- squarify: rectangular subdivision and the **default** setting
+- slice: horizontal subdivision
+- dice: vertical subdivision
+- slice-dice: alternating between horizontal and vertical subdivision
+
+\# *chart.ratio*(value)
+
+> Lets you change the ratio value that determines node layout. Default value is around 1.61. 
