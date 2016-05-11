@@ -8,9 +8,9 @@ First get a data file where the data is structured in a natural hierarchy. For e
 
 Then create an instance of the Treemap chart like this:
 
-'''javascript
+```javascript
 var mychart = TreemapChart()
-'''
+```
 
 Then load your data into the chart and draw it!
 var div = d3.select("#vis")datum(data).call(mychart) 
