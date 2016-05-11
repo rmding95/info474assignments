@@ -4,7 +4,11 @@ Easily configurable D3 Treemap Chart
 
 ## Usage
 
-First get a data file where the data is structured in a natural hierarchy. For example, in module 9 we had a file where the natural heirarchy was every country having a parent region. Load this file using the csv d3 function. Should look something like this: d3.csv('data/prepped_data.csv', function(error, data) {}.
+First get a data file where the data is structured in a natural hierarchy. For example, in module 9 we had a file where the natural heirarchy was every country having a parent region. Load this file using the csv d3 function. Should look something like this: 
+
+```javascript
+d3.csv('data/prepped_data.csv', function(error, data) {}.
+```
 
 Then create an instance of the Treemap chart like this:
 
@@ -13,7 +17,10 @@ var mychart = TreemapChart()
 ```
 
 Then load your data into the chart and draw it!
+
+```javascript
 var div = d3.select("#vis")datum(data).call(mychart) 
+```
 
 This will draw the treemap in the selected div with default parameters. For a list of configurable parameters, check the API parameters section below this.
 
