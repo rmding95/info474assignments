@@ -46,10 +46,11 @@ var myChart = TreemapChart().nestedElement("region").measure("fertility_rate").e
 
 > Tells the chart what text each node should have.
 
-\# *chart.colorScale(value)
+\# *chart.colorScale*(value)
 
 > Sets the color scale for the chart. You have to specify a specific string for this to work, the choices are:
 -category10 *DEFAULT*
 -category20
 -category20b
 -category20c
+
