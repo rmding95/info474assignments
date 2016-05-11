@@ -49,8 +49,8 @@ var myChart = TreemapChart().nestedElement("region").measure("fertility_rate").e
 \# *chart.colorScale*(value)
 
 > Sets the color scale for the chart. You have to specify a specific string for this to work, the choices are:
-- category10 **DEFAULT**
+- category10 **(DEFAULT)**
 - category20
 - category20b
 - category20c
-
+See [this] (https://github.com/mbostock/d3/wiki/Ordinal-Scales#categorical-colors) for more information about categorical color scales.
