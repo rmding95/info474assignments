@@ -1,0 +1,15 @@
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
+
+/*Sets the labels to a specific size, weight, fonttype,
+	and location*/
+.arc text {
+  font-size: 11px;
+  font: sans-serif;
+  font-weight: bold;
+  text-anchor: middle;
+}
+
+/*Sets the paths in-between the slices to be white*/
+.arc path {
+  stroke: white;
+}
